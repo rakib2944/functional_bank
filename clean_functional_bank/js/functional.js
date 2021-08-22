@@ -19,12 +19,12 @@ function updateAmount(amountFiled, amount) {
     const privousAmountValue = parseFloat(PrivousAmount.innerText);
     const updateTotalAmount = privousAmountValue + amount;
     totalAmount.innerText = updateTotalAmount;
+    return updateTotalAmount;
 }
 
 
 //Update Total Balance
 function updateBalaceFild(newBalance, isAdding) {
-
     const balanceFiled = document.getElementById("total-balance");
     const currentBalance = parseFloat(balanceFiled.innerText);
     let UpdateBalance;
